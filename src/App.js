@@ -10,8 +10,8 @@ import List from "./pages/list/List";
 
 const App = createBrowserRouter(
   createRoutesFromElements(<>
-    <Route path="/list" element={<List />}/>
-    <Route path="/list/:id" element={<Details />} />
+    <Route path="/chtest/list" element={<List />}/>
+    <Route path="/chtest/list/:id" element={<Details />} />
     <Route path="*" element={<Main />}/>
   </>
   )

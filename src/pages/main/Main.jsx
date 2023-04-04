@@ -5,7 +5,7 @@ import style from './main.module.css';
 const Main = () => {
   return (
     <NavLink
-      to="/list"
+      to="/chtest/list"
       className={style.link}
     >
         <button className={style.button}> Go to TransactionsList</button>

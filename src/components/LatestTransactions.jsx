@@ -17,7 +17,7 @@ const LatestTransactions = ({ transactions }) => {
   const today = moment();
 
   const getDescription = (isPending, description, parentWidth) => {
-    const maxTextWidth = (parentWidth - 50) / 11;
+    const maxTextWidth = (parentWidth - 50) / 12;
     if (isPending) {
       const str = `Pending - ${description}`;
       return str.length > maxTextWidth
@@ -79,7 +79,7 @@ const LatestTransactions = ({ transactions }) => {
             summ,
           }) => (
             <NavLink
-              to={`/list/${id}`}
+              to={`/chtest/list/${id}`}
               className={style.wrapper}
               ref={descriptionParent}
             >
@@ -103,7 +103,7 @@ const LatestTransactions = ({ transactions }) => {
                 <span>{getDate(authorizedUser, creadetAt)}</span>
               </div>
               <div className={style.paymentWrapper}>
-                <span className={style.payment}>{summ}</span>
+                <span className={style.payment}>{type==='PAYMENT'?`+$${summ}`:`$${summ}`}</span>
                 <span className={style.percent}>{`${Math.round(
                   getRandomInteger(1, 10)
                 )}%`}</span>
