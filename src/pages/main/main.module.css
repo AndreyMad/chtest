@@ -1,0 +1,17 @@
+.button{
+    display: block;
+    margin:auto;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    margin-top: 250px;
+    border-radius: 10px;
+    border: 1px solid  #818083;
+    background-color: #fff;
+}
+.button:hover{
+   cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}

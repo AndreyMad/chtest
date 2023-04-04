@@ -1,0 +1,47 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 210px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.block {
+  width: calc(50% - 35px);
+  min-height: 80px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block:last-of-type {
+  height: 100%;
+}
+.balanceValue {
+  font-size: 28px;
+  font-weight: bold;
+}
+.secondaryText {
+  color: #b1afaf;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #b1afaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0px 0px auto;
+}
+.icon svg {
+  width: 35px;
+  height: 35px;
+}
